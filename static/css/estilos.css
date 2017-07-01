@@ -1,0 +1,169 @@
+/*********Utilidades**************/
+.u-title{
+	color: #00CCFF;
+	border-bottom: 2px dashed #00CCFF;/*dashed sirve para poner bordes de puntas*/
+	font-weight: normal;
+	font-size: 1.5em;
+	padding-bottom: .5em;
+	text-align: center;
+}
+
+/****Menu**********/
+/*background: #ccc;*/
+/*display: inline-block;*/
+.MainMenu{
+	background: #1E1E1E;
+	text-align: center;
+	height: 3.75em;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.MainMenu-list{
+	margin: 0;/*Para que no tenga margen*/
+	padding: 0;/*Para que no tenga margen interno*/
+}
+
+.MainMenu-item{
+	display: inline-block;
+}
+
+.MainMenu-link{
+	color: #00DBFF;
+	text-decoration: none;
+	line-height: 3.75em;/*Sirve para alinear verticalmente, y cuando se alinea verticalmente el tamaño es igual al del elemento padre*/
+	margin-right: 1.5em;
+}
+.MainMenu-link:hover{
+	color: #FFFFFF;
+}
+/*Header*/
+
+.Header{
+	margin-top:3.75em;
+	background-image: url('../images/portada.jpg');
+	background-repeat: no-repeat;/*Para que la imagen no se repita*/
+	background-position: center;/*Nos centra la imagen*/
+	background-size: cover;/*Hace que la imagen tome todo el ancho y alto del tag al que se le esta asignando*/
+	text-align: center;
+	padding: 1.2em 0;/*Hacemos que no este pegado arriba y abajo*/
+}
+
+.Header-image{
+	width: 200px;
+	height: 200px;
+	border: 5px solid white;
+	border-radius: 50%;/*10px 50px 5px 60px se ve genial con eso*/
+}
+
+.Header-name,
+.Header-link{
+	color: white;
+}
+
+.Header-link{
+	font-size: 2.2em;
+	font-weight: bold;/*Sirve para colocar el peso de una fuente*/
+	text-decoration: none;
+}
+
+.Header-name{
+	font-size: 1.5em;
+	font-weight: 300;/*Se puede colocar -normal- y eso nos da un peso de 400, pero en este caso podemos ponerle 300 por defecto*/
+	margin: 0;
+}
+/*display: inline-block;/*Sirve para poner un bloque al lado de otro*/
+/*background: red;
+vertical-align: top;*/
+
+/*********Profile********************/
+
+.Profile{
+	text-align: center;
+}
+.Profile-link{
+	background: orange;
+	color: white;
+	text-decoration: none;
+	padding: .5em 1em;
+	border-radius: 2em;
+	margin-right: .5em;
+}
+
+/********Work**************/
+.Work{
+	margin-top: 2em;
+	text-align: center;
+}
+
+.Work-item{
+	display: inline-block;
+	margin-right: 1.8em;
+	margin-bottom: 1.8em;
+}
+.Work-imageContainer{
+	margin: 0;
+}
+.Work-description{
+	font-size: 1.1em;
+	color: #515151;
+	font-style: italic;
+}
+
+/**********Footer************/
+
+.Footer{
+	background-image: url('../images/footer.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 2em 0;
+	text-align: center;
+}
+
+.Footer-form{
+	text-align: center;
+	display: inline-block;
+}
+
+.Footer-left{
+	display: inline-block;
+	width: 32em;
+	text-align: center;
+	vertical-align: top; /*Nos da una alineacion vertical*/
+}
+
+.Footer-title{
+	color: white;
+}
+
+.Footer-formInput,
+.Footer-textarea{
+	color: white;
+	border: none;
+	display: block;
+	border-radius: 2em;
+	padding: .5em;
+	margin: 0 auto 1em;/*Cuando le damos auto al margin eso hace que las cosas con block se centren*/
+}
+
+.Footer-textarea{
+	resize: none;/*Con eso hacemos que las rayitas para hacer mas grande el textarea desaparescan*/
+}
+
+.Footer-botton{
+	background: orange;
+	color: white;
+	border:none;
+	border-radius: 1em;
+	padding: .5em 1em;
+}
+/*:first-line sirve para darle estilo a la primer linea de un texto.
+
+:first-letter sirve para darle estilo a la primer letra del texto*/
+/*Para poder cambiar el color de una seleccion seria con ::selection;*/
+::selection{
+	background: yellow;
+}
